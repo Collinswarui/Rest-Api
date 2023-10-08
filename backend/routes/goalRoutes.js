@@ -7,13 +7,10 @@ const { getGoals,
         deleteGoal } = require('../controllers/getController');
 
 // create an api endpoint to get all the goals
-router.get('/', getGoals);
 
-router.post('/', setGoal);
-
-router.put('/:id', updateGoal);
-
-router.get('/:id', deleteGoal);
+// endpoint for both the GET and POST methods
+router.route('/').get(getGoals).post(setGoal);
+router.route('./:id').delete(deleteGoal).put(updateGoal);
 
 
 module.exports = router;
