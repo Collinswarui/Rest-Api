@@ -10,7 +10,7 @@ const { getGoals,
 
 // endpoint for both the GET and POST methods
 router.route('/').get(getGoals).post(setGoal);
-router.route('./:id').delete(deleteGoal).put(updateGoal);
+router.route('/:id').delete(deleteGoal).put(updateGoal);
 
 
 module.exports = router;
