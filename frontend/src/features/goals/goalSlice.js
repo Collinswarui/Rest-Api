@@ -27,7 +27,7 @@ async (goalData, thunkAPI) => {
 })
 
 export const goalSlice = createSlice({
-    name: 'gaol',
+    name: 'goal',
     initialState,
     reducers:{
         reset: () => initialState
