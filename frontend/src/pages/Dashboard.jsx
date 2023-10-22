@@ -1,6 +1,7 @@
 import {useEffect} from 'react'
 import {useNavigate} from 'react-router-dom'
 import {useSelector} from 'react-redux'
+import Goalform from '../components/Goalform'
 
 function Dashboard() {
 
@@ -20,6 +21,7 @@ function Dashboard() {
       <h2>Welcome {user && user.name}</h2>
       <p>Goals Dashboard</p>
     </section>
+    <Goalform />
     </>
   )
 }
