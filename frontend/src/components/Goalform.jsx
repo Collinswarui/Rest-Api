@@ -5,12 +5,12 @@ import {createGoal} from '../features/goals/goalSlice'
 
 
 function Goalform() {
-  const {text, setText } = useState('')
+  const [text, setText ] = useState('')
 
   const dispatch = useDispatch()
 
 
-  const onSubmit = e => {
+  const onSubmit = (e) => {
     e.preventDefault()
 
     dispatch(createGoal({text}))

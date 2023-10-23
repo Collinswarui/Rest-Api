@@ -43,7 +43,7 @@ export const goalSlice = createSlice({
                 state.isSuccess = true
                 state.goals.push(action.payload)
             })
-            .addCase(createGoal.fulfilled, (state, action) => {
+            .addCase(createGoal.rejected, (state, action) => {
                 state.isLoading = false
                 state.isError = true
                 state.message = action.payload
