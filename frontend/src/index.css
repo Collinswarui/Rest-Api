@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
+:root{
+  --primary: #D81E58;
+    --secondary: #1c024d;
+    --light: #EEE;
+    --light-alt: #eb6207;
+    --dark: #131A26;
+    --dark-alt: #ac095a;
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +15,9 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  height: 100vh;
+  /* height: 100vh; */
+  /* background-color: var(--primary); */
+  background-image: linear-gradient(to bottom, var(--primary), var(--dark));
 }
 
 a {
@@ -48,12 +57,13 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 2px solid #e6e6e6;
   margin-bottom: 60px;
 }
 .logo {
   font-size: large;
   font-weight: 600;
+  
 }
 
 .header ul {
@@ -69,10 +79,12 @@ h3 {
 .header ul li a {
   display: flex;
   align-items: center;
+  color: #e6e6e6;
+  font-weight: 600;
 }
 
 .header ul li a:hover {
-  color: #777;
+  color: #f1a80b;
 }
 
 .header ul li a svg {
@@ -82,12 +94,13 @@ h3 {
 .heading {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   padding: 0 20px;
+  color: var(--light);
 }
 
 .heading p {
-  color: #828282;
+  color: var(--light);
 }
 
 .goals {
@@ -97,7 +110,7 @@ h3 {
 }
 
 .goal {
-  background-color: #56429e;
+  background-color: var(--dark-alt);
   margin: 10px 0;
   padding: 20px 0 10px;
   position: relative;
@@ -116,22 +129,30 @@ h3 {
 
 .form,
 .content {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
+  padding: 10px;
+  border: 2px solid var(--primary);
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 24px var(--primary, 0.4);
+  
 }
 
-.form-group {
-  margin-bottom: 10px;
+.form p {
+  color: var(--light);
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .form-group input,
 .form-group textarea,
 .form-group select {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   border: 1px solid #e6e6e6;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-family: inherit;
 }
 
@@ -143,19 +164,23 @@ h3 {
 
 .btn {
   padding: 10px 20px;
-  border: 1px solid #000;
+  border: 1px solid var(--light-alt);
   border-radius: 5px;
-  background: #000;
+  background: var(--light-alt);
   color: #fff;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
   text-align: center;
   appearance: button;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
+  width: 50% !important;
+  
 }
+
+
 
 .btn svg {
   margin-right: 8px;

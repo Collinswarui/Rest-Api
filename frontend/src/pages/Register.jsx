@@ -75,6 +75,7 @@ function Register() {
     </section>
 
     <section className="form">
+      <p>Enter Your Details</p>
       <form onSubmit={onSubmit}>
         <div className="form-group">
           <input 
