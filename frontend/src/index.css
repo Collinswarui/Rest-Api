@@ -51,6 +51,10 @@ h3 {
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 60px;
 }
+.logo {
+  font-size: large;
+  font-weight: 600;
+}
 
 .header ul {
   display: flex;
