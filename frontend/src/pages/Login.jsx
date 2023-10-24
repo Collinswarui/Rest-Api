@@ -63,9 +63,9 @@ function Login() {
   return (
    <div className="log">
     <section className="heading">
-      {/* <h1>
+      <h1>
         <FaSignInAlt /> Login
-      </h1> */}
+      </h1>
       <p>Login to your account</p>
     </section>
 

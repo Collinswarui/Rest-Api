@@ -40,9 +40,11 @@ function Dashboard() {
   }
   return (
     <>
+    <div className="dboard"><p>Dashboard</p></div>
     <section className="heading">
-      <h2>Welcome {user && user.name}</h2>
-      <p>Goals Dashboard</p>
+    
+      <h1>Welcome {user && user.name}</h1>
+     
     </section>
     <Goalform />
     <section className="content">
