@@ -20,8 +20,8 @@ function Goalform() {
   return (
     <section className="form">
         <form onSubmit={onSubmit}>
-            <div className="form-group">
-                <label htmlFor="text">Goal</label>
+            <div className="form-group cont">
+                <label htmlFor="text">Enter Your Goal</label>
                 <input type="text" 
                        name="text" 
                        id="text" 

@@ -15,14 +15,14 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  /* height: 100vh; */
-  /* background-color: var(--primary); */
-  background-image: linear-gradient(to bottom, var(--primary), var(--dark));
+  height: 100%;
+  background-color: var(--primary);
+  background: linear-gradient(to bottom, var(--primary), var(--dark));
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #fcf8f8;
 }
 
 p {
@@ -50,6 +50,10 @@ h3 {
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
+}
+
+.log {
+  min-height: 100%;
 }
 
 .header {
@@ -105,30 +109,43 @@ h3 {
 
 .goals {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  /* margin-bottom: 20px; */
+  margin: 35px;
 }
 
 .goal {
-  background-color: var(--dark-alt);
-  margin: 10px 0;
+  margin: 10px;
   padding: 20px 0 10px;
   position: relative;
   color: #fff;
+  background-color: var(--dark-alt);
   border-radius: 16px;
 }
 
 .goal .close {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  cursor: pointer;
-  border: none;
-  background: none;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-weight: bolder;
+  
+
+  width: 26px;
+  height: 26px;
+  color: var(--light);
+  background-color: var(--light-alt);
+  border-radius: 50%;
+  border: 1px solid var(--light-alt);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form,
-.content {
+.content .cont{
   width: 80%;
   margin: 0 auto;
   padding: 10px;
@@ -157,9 +174,12 @@ h3 {
 }
 
 .form-group label {
-  text-align: left;
+  text-align: center;
   display: block;
   margin: 0 0 5px 3px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .btn {
@@ -176,7 +196,7 @@ h3 {
   /* display: flex; */
   align-items: center;
   justify-content: center;
-  width: 50% !important;
+  width: 70% !important;
   
 }
 
