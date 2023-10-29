@@ -51,10 +51,6 @@ h3 {
   text-align: center;
 }
 
-.log {
-  min-height: 100%;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
